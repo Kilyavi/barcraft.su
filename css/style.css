@@ -94,3 +94,113 @@ footer p {
 footer a:hover {
 	text-decoration: none;
 }
+
+.table-bc {
+	width: 100%;
+	background-color: rgba(255,255,255,.05);
+	border: 1px solid rgba(255,255,255,.15);
+	box-shadow: 0 0 0 1px #000;
+}
+
+.table-bc th {
+	text-align: center;
+	font-weight: normal;
+}
+
+.table-bc th:hover {
+	cursor: default;
+}
+
+.table-bc thead > tr > th,
+.table-bc tbody > tr > th,
+.table-bc tfoot > tr > th,
+.table-bc thead > tr > td,
+.table-bc tbody > tr > td,
+.table-bc tfoot > tr > td {
+	border: 1px solid rgba(255,255,255,.15);
+}
+
+.th-dk {
+	background-color: rgba(196,30,59,.2);
+}
+
+.th-dk:hover {
+	background-color: rgba(196,30,59,.4);
+}
+
+.th-pal {
+	background-color: rgba(245,140,186,.2);
+}
+
+.th-pal:hover {
+	background-color: rgba(245,140,186,.4);
+}
+
+.th-dh {
+	background-color: rgba(163,48,201,.2);
+}
+
+.th-dh:hover {
+	background-color: rgba(163,48,201,.4);
+}
+
+.th-dru {
+	background-color: rgba(255,125,10,.2);
+}
+
+.th-dru:hover {
+	background-color: rgba(255,125,10,.4);
+}
+
+.th-wl {
+	background-color: rgba(148,130,202,.2);
+}
+
+.th-wl:hover {
+	background-color: rgba(148,130,202,.4);
+}
+
+.th-mg {
+	background-color: rgba(105,204,240,.2);
+}
+
+.th-mg:hover {
+	background-color: rgba(105,204,240,.4);
+}
+
+.th-pr {
+	background-color: rgba(255,255,255,.2);
+}
+
+.th-pr:hover {
+	background-color: rgba(255,255,255,.4);
+}
+
+.th-war {
+	background-color: rgba(199,156,110,.2);
+}
+
+.th-war:hover {
+	background-color: rgba(199,156,110,.4);
+}
+
+.th-rg {
+	background-color: rgba(255,245,105,.2);
+}
+
+.th-rg:hover {
+	background-color: rgba(255,245,105,.4);
+}
+
+.th-mk {
+	background-color: rgba(45,155,120,.2);
+}
+
+.th-mk:hover {
+	background-color: rgba(45,155,120,.4);
+}
+
+.table-bc img {
+	margin: 0;
+	width: 30px;
+}
