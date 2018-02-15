@@ -15,6 +15,55 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>BarCraft - Игровое Сообщество</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.gradient.min.css" />
+		<link rel="stylesheet" href="src/themes/colored/tree.css" />
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+		<script src="src/jquery.ts3viewer.js"></script>
+
+		<script>
+
+		$(document).ready(function()
+		{
+			$("#tsviewer").tsviewer({
+				// mandatory server address
+				host: "185.26.115.86",
+				port: "9987",
+				// optional tooltip patterns
+				serverTip:  "Clients: $users/$slots",
+				channelTip: "Codec: $codec",
+				clientTip:  "Version: $version on $platform",
+				// optional callbacks
+				onNode:  function(elem, node) {
+					// your code
+				},
+				onReady: function(data, count) {
+					// your code
+				},
+				onError: function(error) {
+					// your code
+				}
+			});
+
+			$("#refresh").click(function() {
+				// shortcut to refresh the tree
+				$("#tsviewer").tsviewerRefresh(true);
+			});
+						
+			$("#expand").click(function() {
+				// shortcut to expand all nodes
+				$("#tsviewer").tsviewerExpand();
+			});
+						
+			$("#collapse").click(function() {
+				// shortcut to collapse all nodes
+				$("#tsviewer").tsviewerCollapse();
+			});
+		});
+
+		</script>
 </head>
 <body>
 	<div class="nav-header">
@@ -59,7 +108,20 @@
 			<div class="row" style="margin: 20px 0 0 0;">
 				<div class="main-content col-9">
 					<div class="arcticle">
-						<a href="post/7.html"><h2>Самый возмутитеьлный рекламный ролик!</h2></a>
+						<div class="row">
+							<div class="col"><h2>Небольшое обновление сайта.</h2></div>
+							<div class="col"><h5>15.02.2018</h5></div>
+						</div>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Прикрутил мониторинг TS'a. Иногда выдаёт ошибку и не подгружает кастомные иконки. Учитывая, что я вообще нихуя не понимаю, как это работает, то уже хорошо. Возможно, когда я таки подучусь, я это исправлю. Также прикрутил кнопочку, для входа в TS из браузера. Круто.</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;В разработке движка сайта ещё конь не валялся. И я не валялся. И даже кошки там не валялись. Не скоро, в общем...</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;В ближайшее время, как только сходим вместе в рейд и определимся с составом, обновлю табличу рейдеров. Надо бы даже вынести её в отдельную кнопку.</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Ну и ещё висит куча полуобработанных видео, потому что у меня нихера нет времени. Точнее оно есть, но его не хватает. Вот.</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Ну а пока всё. Всем приятной игры!</p>
+						<p><footer class="blockquote-footer text-right"><i>С любовью, BarCraft!</i></footer></p>
+						<p class="pdiv"></p>
+					</div>
+					<div class="article">
+						<a href="post/7.html"><h2>Самый возмутительный рекламный ролик!</h2></a>
 						<p>&nbsp;&nbsp;&nbsp;&nbsp;Британское управление по стандартам рекламы назвало ролик, который сильнее всего возмутил местных жителей. Лидером антирейтинга стало видео The Whole Chicken от сети закусочных KFC. По мнению зрителей, танцы кур под песню рэпера DMX демонстрируют неуважение к птицам и огорчает (distressing) детей, вегетарианцев и веганов.</p>
 						<div class="text-center"><iframe width="700" height="400" src="https://www.youtube.com/embed/KykM1kwdaOA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 						<p>&nbsp;&nbsp;&nbsp;&nbsp;Ну, неуважение к курам (КУРАМ БЛЯДЬ!) это ладно, можно понять. Но каким хуем тут оказались дети и веганы, я категорически отказываюсь понимать. Возможно, потмоу что whole и whore созвучно, а по видео курам больше подходит whore. Это оскорбляет детей. Ок. А веганов в принципе всё оскорбляет. Но это настолько притянуто за уши, что даже не смешно. Вспоминается <a href="https://youtu.be/sDxhdxRSl-w?t=16m28s">высказывание</a> Джона Шемякина про вину. Мы всем должны и во всём виноваты. И точка.</p>
@@ -71,7 +133,7 @@
 						<p><footer class="blockquote-footer text-right"><i>С любовью, BarCraft!</i></footer></p>
 						<p class="pdiv"></p>
 					</div>
-					<div class="arcticle">
+					<div class="article">
 						<a href="post/6.html"><h2>Тактика + Убийство Разрушителя миров (Мифик).</h2></a>
 						<p>&nbsp;&nbsp;&nbsp;&nbsp;Поздравляю всех с убийством первого босса в мифик Анторусе! Для всех, и в том числе для наших бананов, проебланивших рейд, сделал видосик с тактикой, которую мы на ходу придумывали и диву давались от улучшенных абилок.</p>
 						<p>&nbsp;&nbsp;&nbsp;&nbsp; Нам всё ещё нужны ДД, так что можете посмотреть видео с убийством, на нём прекрасно видно наш уровень и атмосферу в рейде в целом.</p>
@@ -84,7 +146,7 @@
 						<p><footer class="blockquote-footer text-right"><i>С любовью, BarCraft!</i></footer></p>
 						<p class="pdiv"></p>
 					</div>
-					<div class="arcticle">
+					<div class="article">
 						<a href="post/5.html"><h2>ХМ полностью закрыт! Примите мои поздравления.</h2></a>
 						<p>&nbsp;&nbsp;&nbsp;&nbsp;Мы полностью закрыли Анторус в героике! Это было непросто, учитывая что некоторых людей мы одевали и обучали с нуля, а в честь некоторых назвали абилки боссов, незамысловато намекая на количество смертей и вайпов.</p>
 						<p>&nbsp;&nbsp;&nbsp;&nbsp;На данный момент у нас уже половина вещей уходит на диз, трансмог и прок, поэтому нам надо идти и тыкать палочкой мифик. Для этого надо 20 человек, а с этим у нас проблемы. Вроде с танками и хилами устаканилось, но нам очень не хватает дамагеров.</p>
@@ -127,12 +189,12 @@
 						<p><footer class="blockquote-footer text-right"><i>С любовью, BarCraft!</i></footer></p>
 						<p class="pdiv"></p>
 					</div>
-					<div class="arcticle">
+					<div class="article">
 						<a href="post/4.html"><h2>Обновление PUBG 1.0 от 21.12.2017 на русском.</h2></a>
 						<p><footer class="blockquote-footer text-right">Перевод вольный, поэтому читайте на свой страх и риск, а критику <s>засуньте в жопу</s> оставьте при себе.</footer></p>
 						<img src="img/post/4/2.png" class="img-fluid" alt="">
 						<p>&nbsp;&nbsp;&nbsp;&nbsp;* Пожалуйста, обратите внимание, когда активна функция посмертной записи и повтора, производительность некоторых PC может быть снижена.</p>
-						<h5>Оптимизация клиента</h5>
+						<h3>Оптимизация клиента</h3>
 						<p><ul>
 								<li>Оптимизированы данные о местности для меньшего использования памяти</li>
 								<li>Оптимизированы текстуры для меньшего использования памяти</li>
@@ -148,46 +210,57 @@
 							</ul></p>
 							<p class="text-center"><a href="post/4.html">Читать полностью</a></p>
 							<p class="pdiv"></p>
-					<div class="arcticle">
+						</div>
+					<div class="article">
 						<a href="post/3.html"><h2>[Тактика] + [Убийство] Разрушитель миров Кин'Гарота. Анторус.</h2></a>
 						<p>&nbsp;&nbsp;&nbsp;&nbsp;Смонтировал первые ролики с субботы. На первом рассказывается и показывается тактика и механика босса. На втором видео просто килл такой, каким он был. Приятного просмотра.</p>
-						<iframe width="550" height="315" src="https://www.youtube.com/embed/jy9smJrcGrk" frameborder="0" allowfullscreen></iframe>
-						<iframe width="550" height="315" src="https://www.youtube.com/embed/uemNiRf0p0Q" frameborder="0" allowfullscreen></iframe>
+						<div class="text-center">
+						<iframe width="700" height="400" src="https://www.youtube.com/embed/jy9smJrcGrk" frameborder="0" allowfullscreen></iframe>
+						<iframe width="700" height="400" src="https://www.youtube.com/embed/uemNiRf0p0Q" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<p class="pdiv"></p>
 					</div>
-					<div class="arcticle">
+					<div class="article">
 						<a href="post/2.html"><h2>Новый видосик</h2></a>
 						<p>&nbsp;&nbsp;&nbsp;&nbsp;Делать было нечего, мы бегали на аренку. Было весело. Отснято 4 с половиной часа. Тут смонтированно только первые 30 минут. Приятного просмотра.</p>
-						<div class="text-center"><iframe width="560" height="315" src="https://www.youtube.com/embed/bi_GDQBdYIg" frameborder="0" allowfullscreen></iframe></div>
+						<div class="text-center"><iframe width="700" height="400" src="https://www.youtube.com/embed/bi_GDQBdYIg" frameborder="0" allowfullscreen></iframe></div>
+						<p class="pdiv"></p>
 					</div>
 					<div class="article">
 						<a href="post/1.html"><h2>Конец эпохи застоя.</h2></a>
 						<div class="text-center"><img src="img/art/19.11.2017-1.jpg" class="img-fluid" alt=""></div>
-						<h5>К ознакомлению:</h5>
+						<h3>К ознакомлению:</h3>
 						<p>Мы вновь вернулись в WoW, и сновым запалом набираем людей для покорения последнего рейда в Legion'e и для того, чтобы вступить в Battle for Azeroth состоявшимся коллективом. Для всех новоприбывших, было бы полезно ознакомиться с нами на странице <a href="about.html">О Проекте</a>, так как мы сильно отличаемся от среднестатистических гильдий.</p>
-						<h5>Коротко о ближайших планах:</h5>
+						<h3>Коротко о ближайших планах:</h3>
 						<p>Надо для начала познакомиться и посмотреть, кто у нас есть, и что мы с этим можем сделать. Начинать будем, грубо говоря, с нуля. В зависимости от народа, либо будем фармить данжи (Э), либо собирать рейды (пока нормалы) и добирать пугов. Выбраны будут 2 дня в неделю рейдовых, остальные - по желанию и возможностям. Возможно, я буду собирать РБГ в эти дни.</p>
-						<h5>Состав:</h5>
+						<h3>Состав:</h3>
 						<div class="text-center"><img src="img/art/19-11-17-2.jpg" class="img-fluid" alt=""></div>
 						<p>Мы (точное количество "Мы" пока назвать сложно) довольно таки способные. Рейд поводить можем. Сайт захучить, песню или книгу написать, меч выковать, на гитаре сыграть. Но! Тем не менее нам всегда нужны деятельные люди не только для пыщ пыщ ололо в рейдах. Если Вы заинтересованы в развитии проекта, и обладаете безграничным энтузиазмом и/или полезными навыками то милости просим.</p>
 						<footer class="blockquote-footer text-right">Да, картинка нагло спизженная и даже не отредактированная. Ибо лень.</footer>
+						<p class="pdiv"></p>
 					</div>
 					<div class="article">
 						<h2>Буенос Ночес, Дамы и Дамы с пиписьками! С Вами BC News.</h2>
-						<h5>Жы Есть!</h5>
+						<h3>Жы Есть!</h3>
 						<p>Главным образом о себе, любимом. Что бы я не делал, чем бы не занимался, а в игры всё тянет и тяяянет. Вот, нелёгкая затащила снова в WoW. Что делать, пока не вкурил, но очень воодушевился будущим аддоном, поэтому надо осваиваться и привыкать к кнопкам. Решил снова собрать наше Сообщество. Времени сейчас крайне мало, но к НГ думаю разъебаться с делами и иметь больше свободного времени. И собственно к чему пишу. Собраться я решил более организованно и конструктивно, поэтому, уважаемые (нет) задроты, стримеры, кодеры, писатели, художники и прочие безработные тунеядцы - готовьте конструктивные предложения и разрабатывайте идеи. Свои концептики есть, но времени, как уже писал, нет.</p>
-						<h5>Связь.</h5>
+						<h3>Связь.</h3>
 						<p>Я таки решил перейти в <a href="https://app.twitch.tv/">Twich</a> (Curse), как и предлагал давно. TS будет также висеть, как резерв, но собираться будем в твиче. Качество хорошее, удобный чатик, картинки, обмен файлов и многое другое. Сервер наш <a href="https://app.twitch.tv/servers/p8SXr4">BarCraft</a>. Там обитаю почти каждый день с 21 до 02 ориентировочно.</p>
-						<h5>Pool. Game Pool.</h5>
+						<h3>Pool. Game Pool.</h3>
 						<p>Как и писал ранее, я вернулся в WoW, и мы с Илей, Костей и Дарком уже пытаемся куда-то там походить. Также активно ебашим сковородками в PUBG (чего и другим советуем). Иногда LoL прочая шалупонь по вкусу. Также выслушаем Ваши предложения.</p>
-						<h5>/dev</h5>
+						<h3>/dev</h3>
 						<p>В принципе, сайт я и сейчас могу сделать простенький, но для дальнейшей работы мне нужны толковые ребята, которые шарят в php, yii2, git, linux. Хотя бы для дельного совета. Я слышал у нас водятся такие.</p>
-						<h5>Всем спасибо, все свободны. Вот.</h5>
+						<h3>Всем спасибо, все свободны. Вот.</h3>
 					</div>
 				</div>
-				<div class="sidebar col-3">
+				<div class="sidebar col-3 text-center">
+					<button class="btn tsbtn" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Мониторинг TS</button>
+					<div class="collapse" id="collapseExample">
+						<div class="card tscard">
+							<div id="tsviewer"></div>
+							<a class="btn tsbtn" href="ts3server://185.26.115.86:9987/?nickname=Гость%20с%20Сайта" style="margin-top: 5px;">Connect to Server</a>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
 	</div>
 
 <footer>
@@ -202,9 +275,6 @@
 		</div>
 	</div>
 </footer>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
 </body>
