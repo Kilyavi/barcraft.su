@@ -213,6 +213,10 @@ footer a:hover {
 	width: 30px;
 }
 
+.tsm {
+	display: flex;
+}
+
 .tsbtn {
 	width: 100%;
 	color: #b9b9b9;
