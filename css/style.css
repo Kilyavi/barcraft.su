@@ -220,6 +220,7 @@ footer a:hover {
 .tsbtn {
 	width: 100%;
 	color: #b9b9b9;
+	cursor: pointer;
 	border-radius: 0;
 	box-shadow: 0 0 0 1px #000;
 	border: 1px solid rgba(255,255,255,.15);
