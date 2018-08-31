@@ -208,6 +208,22 @@ footer a:hover {
 	background-color: rgba(45,155,120,.4);
 }
 
+.th-sh {
+	background-color: rgba(36,89,255,.2);
+}
+
+.th-sh:hover {
+	background-color: rgba(36,89,255,.4);
+}
+
+.th-ht {
+	background-color: rgba(177,212,115,.2);
+}
+
+.th-ht:hover {
+	background-color: rgba(177,212,115,.4);
+}
+
 .table-bc img {
 	margin: 0;
 	width: 30px;
