@@ -1,69 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64278269-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-64278269-1');
-	</script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>BarCraft - Игровое Сообщество</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.gradient.min.css" />
-		<link rel="stylesheet" href="src/themes/colored/tree.css" />
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		
-		<script src="src/jquery.ts3viewer.js"></script>
-
-		<script>
-
-		$(document).ready(function()
-		{
-			$("#tsviewer").tsviewer({
-				// mandatory server address
-				host: "185.26.115.86",
-				port: "9987",
-				// optional tooltip patterns
-				serverTip:  "Clients: $users/$slots",
-				channelTip: "Codec: $codec",
-				clientTip:  "Version: $version on $platform",
-				// optional callbacks
-				onNode:  function(elem, node) {
-					// your code
-				},
-				onReady: function(data, count) {
-					// your code
-				},
-				onError: function(error) {
-					// your code
-				}
-			});
-
-			$("#refresh").click(function() {
-				// shortcut to refresh the tree
-				$("#tsviewer").tsviewerRefresh(true);
-			});
-						
-			$("#expand").click(function() {
-				// shortcut to expand all nodes
-				$("#tsviewer").tsviewerExpand();
-			});
-						
-			$("#collapse").click(function() {
-				// shortcut to collapse all nodes
-				$("#tsviewer").tsviewerCollapse();
-			});
-		});
-
-		</script>
+	<link rel="stylesheet" href="src/themes/colored/tree.css" />
 </head>
 <body>
 	<div class="nav-header">
@@ -361,7 +305,58 @@
 		</div>
 	</div>
 </footer>
-<script src="js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-64278269-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-64278269-1');
+	</script>
+<script src="src/jquery.ts3viewer.js"></script>
+<script>
+
+		$(document).ready(function()
+		{
+			$("#tsviewer").tsviewer({
+				// mandatory server address
+				host: "185.26.115.86",
+				port: "9987",
+				// optional tooltip patterns
+				serverTip:  "Clients: $users/$slots",
+				channelTip: "Codec: $codec",
+				clientTip:  "Version: $version on $platform",
+				// optional callbacks
+				onNode:  function(elem, node) {
+					// your code
+				},
+				onReady: function(data, count) {
+					// your code
+				},
+				onError: function(error) {
+					// your code
+				}
+			});
+
+			$("#refresh").click(function() {
+				// shortcut to refresh the tree
+				$("#tsviewer").tsviewerRefresh(true);
+			});
+						
+			$("#expand").click(function() {
+				// shortcut to expand all nodes
+				$("#tsviewer").tsviewerExpand();
+			});
+						
+			$("#collapse").click(function() {
+				// shortcut to collapse all nodes
+				$("#tsviewer").tsviewerCollapse();
+			});
+		});
+
+		</script>
 </body>
 </html>
